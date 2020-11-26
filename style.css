@@ -1,0 +1,219 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:700,400';
+
+/*  general setup  */
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box; 
+}
+
+a, a:hover, a:visited, a:link, a:active {
+    text-decoration: none !important;
+}
+
+li {
+	list-style: none; 
+}
+
+body {
+	background-color: #dbe4e6 !important; 
+	font-family: "Roboto"; 
+}
+
+
+/*  nav setup  */
+
+nav {
+	height: 80px; 
+	width: 100%; 
+	background-color: #0082e6; 
+}
+
+nav * {
+	color: white; 
+}
+
+/*  nav bar: list and buttons  */
+#logo {
+	font-size: 35px; 
+	font-weight: bold;
+	letter-spacing: 3px; 
+	padding: 0 50px; 
+	line-height: 80px; 
+}
+
+.menu {
+	float: right; 
+	margin-right: 40px; 
+}
+
+.menu li {
+	display: inline-block;
+	margin: 0 8px; 
+	line-height: 80px; 
+	letter-spacing: 2px; 
+	font-weight: bold;
+	font-size: 16px; 
+}
+
+.menu a {
+	color: white; 
+	font-size: 18px; 
+	border: 1px solid transparent;
+	padding: 7px 10px; 
+	border-radius: 3px; 
+}
+
+.menu a.here, .menu a:hover {
+	color: white; 
+	background: #1bc1ff; 
+	transition: 0.3s; 
+}
+
+nav .checkbtn {
+	font-size: 30px; 
+	line-height: 80px; 
+	float: right; 
+	margin-right: 40px; 
+	cursor: pointer;
+	display: none; 
+}
+
+#check {
+	display: none; 
+}
+
+@media (max-width: 1096px) {
+	#logo {
+		font-size: 24px; 
+		padding-left: 40px;
+		padding-right: 20px;
+	}
+
+	.menu {
+		margin: 0 20px; 
+	}
+
+	.menu a {
+		font-size: 14px; 
+	}
+}
+
+@media (max-width: 896px) {
+	nav .checkbtn {
+		display: block; 
+	}
+
+	.menu {
+		margin: 0; 
+		position: fixed; 
+		width: 100%;
+		height: 100vh; 
+		background: #2c3e50;
+		top: 80px; 
+		right: -100%;
+		padding-top: 30px; 
+		transition: all 0.3s; 
+		text-align: center;
+		z-index: 1;
+	}
+
+	.menu li {
+		display: block; 
+	}
+
+	.menu a {
+		padding: 10px 15px; 
+		font-size: 20px; 
+	}
+
+	.menu a.here, .menu a:hover {
+		background: none; 
+		color: #0082e6;
+		transition: 0.3s; 
+	}
+
+	#check:checked ~ ul {
+		right: 0;
+	}
+}
+
+
+/*  cards setup  */
+
+#main {
+	padding: 30px 0px; 
+}
+
+#title {
+	text-align: center; 
+	padding: 25px 0px; 
+}
+
+#title h1 {
+	font-weight: 900; 
+	font-size: 34px; 
+	padding-bottom: 0.25rem; 
+}
+
+#title p {
+	font-size: 18px; 
+}
+
+.single-blog {
+	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2); 
+	padding: 15px; 
+	margin-top: 30px; 
+	background-color: #fff; 
+}
+
+.blog-text {
+	font-size: 14px; 
+	text-align: justify; 
+}
+
+.blog-meta {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+
+.blog-meta * {
+	margin: 0px 5px; 
+}
+
+.blog-meta .avatar {
+	object-fit: cover;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+.blog-meta p {
+	font-size: 14px; 
+	color: cornflowerblue; 
+	margin-right: auto; 
+}
+
+.blog-meta span {
+	font-size: 12px; 
+	margin-left: auto; 
+}
+
+.single-blog h3 {
+	margin-top: 10px; 
+	font-size: 24px; 
+	/*color: #007bff; */
+}
+
+.single-blog img {
+	width: 100%; 
+}
+
+
+
+
+
+
+
